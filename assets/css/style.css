@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+}
+
+body
+{
+
+  font-family: 'Shadows Into Light Two', cursive;	line-height: 150%;
+  letter-spacing: 1px;
+  font-weight: bold;
+	padding:0;
+	top:0;left:0;right: 0;
+	text-align: center;
+  width:100%;
+  background-color: black;
+
+}
+
+h1 {
+
+  display: inline;
+  position: relative;
+  font: 60px Helvetica, Sans-Serif;
+  font-size: 80px;
+  letter-spacing: -5px;
+  color: rgba(255,0,0,1); 
+  background-color: black;
+
+}
+
+h1:after {
+
+  content: "GIPHY API";
+  position: absolute; left: 0px; top: 5px;
+  color: rgba(0,255,0,1);
+
+}
+
+button
+{
+
+  height: 50px;
+  width: 200px;
+  color:#FF0000;
+  float: left;
+
+}
+
+.gif
+{
+
+  cursor: pointer;
+	position: relative;
+	width: 160px;
+	height: 160px;
+	background-color: white;
+	border:3px solid #DC143C;
+
+}
+
+.container{
+
+  margin-top:50px;
+  border:5px double;
+  background-color:   #FFFF00 ;
+
+}
+
+.cartoon
+{
+	margin:5px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  white-space: normal;
+  word-wrap: break-word !important;
+
+}
+
+.cartoon:hover
+{
+  background-color: #00FFFF!important; 
+}
+
+#giphy-form
+{
+
+	clear: both;
+	overflow: auto;
+  padding: 30px;
+
+}
+
+#giphy-input
+{
+
+  color:black;
+  border:3px solid;
+  font-size: 20px;
+
+}
+
+label
+{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p{
+
+	margin-top:10px;
+	font-size: 25px;
+
+}
+
+.button {
+    
+    border: 1px solid #DC143C;
+    color:#FF0000;
+    background-color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    cursor: pointer;
+    
+}
+
+.button:hover {
+
+    background-color: #8B0000;
+    color:#DAA520;
+
+}
+
+#play
+{
+  height: 50px;
+  width: 50px;
+   -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+
+#grid {
+
+      margin: .5em;
+      position: relative;
+      width:100%;
+	    z-index: -1;
+
+}
+
+.block {
+
+    width: 30px;
+    height: 20px;
+    background: hsla(0, 0%, 6.7% , .7);
+    border-radius: 2px;
+    position: absolute;
+    animation: go 750ms ease infinite alternate;
+
+}
+
+@keyframes go {
+
+    0% {
+        transform: scale(1, 1) translate(0, 0);
+    }
+    100% {
+        transform: scale(1.5, 1.5) translate(0, 0);
+    }
+
+}
+
+.gif.hvr-grow-shadow {
+
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+
+}
+
+.gif.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  
+  font-size: 35px;
+  background-color:   #191970    ;
+  color: #DC143C  ;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+}
+
+ul,li{
+
+  list-style:none;
+  margin:2em;
+  float:left;
+
+}
+
+ul{
+
+  overflow:hidden;
+  padding:3em;
+
+
+}
+
+ul li figure{
+
+  text-decoration:none;
+  color:#000;
+  background:#EEE8AA;
+  display:block;
+  height:16em;
+  width:15em;
+  padding:0.5em;
+  border:3px  #DC143C inset;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+
+}
+
+ul li{
+
+  
+}
+
+ul li p{
+
+  font-size:180%;
+
+}
+
+ul li figure{
+
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+
+}
+
+ul li:nth-child(even) figure{
+
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+
+}
+
+ul li:nth-child(3n) figure{
+
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+
+}
+
+ul li:nth-child(5n) figure{
+
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+
+}
+
+ul li figure:hover{
+
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+
+}
+
+
+

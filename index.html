@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GifTastic</title>
+  <!-- Include link for google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+  <!-- Include link for bootstrap css stylesheets  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Include link for w3schools css file for button effects -->
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <!-- Include link for reset css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <!-- Include link for style css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- div for background css animation -->
+  <div id="grid"></div>
+  <!-- Heading of the page -->
+  <h1>GIPHY API</h1>
+  <!-- main container div starts -->
+  <div class="container">
+    <div class="row"> 
+      <!-- Row div starts -->
+      <div class="col-md-12"> 
+      <!-- Column div starts -->
+      <!-- div to display all the buttons -->
+        <div id="buttons-view"></div>
+        <!-- form created to add a cartoon as entered by the user from the html page using submit button -->
+        <form id="giphy-form">
+          <!--label for Add a cartoon -->
+          <label for="giphy-input"><strong>Add a Cartoon: </strong></label>
+          <!-- text box to enter cartoon -->
+          <input type="text" id="giphy-input"><br><br> 
+          <!-- Submit Button -->
+          <input id="add-cartoon" class="button" type="submit" value="Submit">
+        <!-- form closes -->
+        </form> 
+      <!-- Column div close -->
+      </div> 
+    <!-- Row div close -->
+    </div>  
+    <!-- Row div starts -->
+    <div class="row"> 
+      <!-- Column div starts -->
+      <div class="col-md-12">
+        <!-- div to display the results --> 
+        <div id="cartoons-view">
+          <i class="fa fa-play" aria-hidden="true"></i>
+
+        </div>
+      <!-- Column div close -->
+      </div>
+      <!-- Row div close -->
+    </div>
+  <!-- main container div close -->
+  </div>
+  <!-- Jquery scripts included -->
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <!-- Javascript file included -->
+  <script type="text/javascript" src="assets/javascript/giphy.js"></script>
+</body>
+</html>
