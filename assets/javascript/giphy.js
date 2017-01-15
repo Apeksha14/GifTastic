@@ -11,7 +11,7 @@
         // get the value of the data-name attribute from the button once it is clicked
         var cartoon = $(this).attr("data-name");
         //queryURL for retrieving the gifs
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q="+cartoon+"&api_key=dc6zaTOxFJmzC";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q="+cartoon+"&api_key=dc6zaTOxFJmzC";
         // An array gifArray is declared to store all the animated gifs from the response Object 
         var gifArray = [];
         // An Array imgArray is declared to store all the still images from the response Object
