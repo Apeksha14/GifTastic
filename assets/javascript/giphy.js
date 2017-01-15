@@ -129,7 +129,7 @@
           var a = $("<button>");
 
           // Adds a class of cartoon to our button
-          a.addClass("cartoon w3-btn w3-white w3-border w3-border-blue w3-round-xlarge ");
+          a.addClass("cartoon myButton");
           // Added a data-attribute
           a.attr("data-name", cartoons[i]);
           // Provided the initial button text
